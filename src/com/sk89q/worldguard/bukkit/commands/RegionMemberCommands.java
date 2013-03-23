@@ -352,7 +352,7 @@ public class RegionMemberCommands {
             }
         }
 
-        RegionDBUtil.removeFromDomain(region.getMembers(), args.getPaddedSlice(2, 0), 0);
+        RegionDBUtil.removeFromDomain(region.getCoOwners(), args.getPaddedSlice(2, 0), 0);
 
         sender.sendMessage(ChatColor.YELLOW
                 + "Region '" + id + "' updated.");
